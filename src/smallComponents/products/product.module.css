@@ -370,3 +370,72 @@ a {
         margin: auto;
     }
 }
+
+
+
+/* Slick slider custom dots styling */
+.slickDots {
+  display: flex !important;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  position: relative;
+  bottom: -10px;
+}
+
+.slickDots li {
+  margin: 0 5px;
+  width: auto;
+  height: auto;
+}
+
+.slickDots li button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  text-indent: -9999px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.slickDots li.slick-active button {
+  background-color: #312584; /* Using your primary color from h2 */
+  transform: scale(1.2);
+}
+
+.dotButton {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/* Ensure slider container has proper spacing */
+.service_main2 {
+  margin-bottom: 20px;
+}
+
+/* Make sure the slider doesn't overflow */
+:global(.slick-track) {
+  display: flex;
+  gap: 10px;
+}
+
+:global(.slick-slide) {
+  height: inherit !important;
+  display: flex !important;
+}
+
+:global(.slick-slide > div) {
+  width: 100%;
+}

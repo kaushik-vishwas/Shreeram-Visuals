@@ -4,10 +4,12 @@ import { RightArrow } from '../../components/Svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import MagicSliderDots from 'react-magic-slider-dots';
-import 'react-magic-slider-dots/dist/magic-dots.css';
 import { useLocation } from 'react-router-dom';
+
+// Remove these imports
+// import MagicSliderDots from 'react-magic-slider-dots';
+// import 'react-magic-slider-dots/dist/magic-dots.css';
+
 const allServices = [
   {
     img: '/assets/services/ex49.png',
@@ -103,15 +105,13 @@ const allServices = [
 ];
 
 const Products = () => {
-  
-
   const pathname = useLocation().pathname.split('/')[1];
   const filteredServices = allServices.filter(service => service.arrowHref !== `/${pathname}`);
 
   return (
     <div className={styles.container}>
       <h2>Our Rental Services</h2>
-      <p className={styles.title}>Choose from our extensive range of rental services just not limited to projectors, speakers, lights, stages, photography, videography and many more in Bengaluru for your door step service. </p>
+      <p className={styles.title}>Choose from our extensive range of rental services just not limited to projectors, speakers, lights, stages, photography, videography and many more in Bengaluru for your door step service. </p>
       <div className={styles.products}>
         {filteredServices.map((service, index) => (
           <Card key={index} {...service} />
@@ -123,16 +123,13 @@ const Products = () => {
 
 export default Products
 
-export const SliderProduct = ({ exclude }) => {
+export const SliderProduct = () => {
   const sliderRef = useRef(null)
-
-
 
   const pathname = useLocation().pathname.split('/')[1];
   const filteredServices2 = allServices.filter(service => service.arrowHref !== `/${pathname}`);
+  
   const sliderSettings = {
-    // removes default buttons
-
     dots: true,
     infinite: true,
     speed: 400,
@@ -141,9 +138,15 @@ export const SliderProduct = ({ exclude }) => {
     autoplay: true,
     pauseOnHover: false,
     arrows: false,
-    appendDots: dots => {
-      return <MagicSliderDots dots={dots} numDotsToShow={4} dotWidth={50} />;
-    },
+    // Use custom dots styling
+    appendDots: (dots) => (
+      <div>
+        <ul className={styles.slickDots}> {dots} </ul>
+      </div>
+    ),
+    customPaging: (i) => (
+      <button className={styles.dotButton}></button>
+    ),
     responsive: [
       {
         breakpoint: 900,
@@ -165,6 +168,7 @@ export const SliderProduct = ({ exclude }) => {
       }
     ]
   }
+  
   return (
     <div className={styles.container}>
       <p className={styles.innovative}>Our Rental Services</p>
@@ -205,8 +209,6 @@ const Card = memo(({ img, title, subtitle, arrowHref }) => {
   )
 })
 
-
-
 const SliderCard = memo(({ img, title, subtitle, arrowHref }) => {
   return (
     <div className={`${styles.width} ${styles.product}`}>
@@ -215,7 +217,6 @@ const SliderCard = memo(({ img, title, subtitle, arrowHref }) => {
       </div>
       <div>
         <p className={styles.name}>{title}</p>
-        {/*  <p className={styles.more}>{more} categories</p> */}
         <p className={styles.text}>{subtitle}</p>
       </div>
       <a href={arrowHref} className={styles.more}>
@@ -224,4 +225,3 @@ const SliderCard = memo(({ img, title, subtitle, arrowHref }) => {
     </div>
   )
 })
-
