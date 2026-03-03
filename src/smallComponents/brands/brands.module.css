@@ -1,0 +1,123 @@
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 70px 0px;
+}
+.container h2{
+    font-family: Outfit;
+font-size: 27px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+color: #8F8F8F;
+padding-bottom: 25px;
+text-align: center;
+}
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .brands img{
+    width: 90px;
+    height: auto;
+} */
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px 80px 0px;
+    }
+    
+    .slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    }
+    
+    .slidetrack {
+    display: flex;
+      -webkit-animation: scroll 25s linear infinite;
+    animation: scroll 25s linear infinite;
+    width: calc(350px * 46);
+      gap: 60px;
+      align-items: center;
+    }
+
+    .slide img {
+        width: 100%;
+      height: auto;
+      }
+
+    @-webkit-keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-350px * 4));
+        }
+        }
+        
+        @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-350px * 4));
+        }
+        }
+        
+/* @media (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    .container h2{
+        font-size: 26px;
+    }
+    .slide img{
+        width: 48px !important;
+    }
+} */
+@media (max-width: 768px) {
+    .slidetrack {
+      gap: 0px;
+    }
+    .hide{
+        display: none;
+        visibility: none;
+    }
+    .container h2{
+        padding: 1px 8px;
+        font-size: 24px !important;
+        line-height: 38px !important;
+    }
+    .container {
+        padding: 60px 0px 0px 0px;
+    }
+    .slide img{
+        width: 60% !important;
+    }
+    .container{
+        width: 100%;
+    }
+    .wrapper{
+      padding: 20px 0px 0px 0px;
+    }
+}
+
+@media (min-width: 1279px) and (max-width: 1440px) {
+
+  .container{
+    width: 90%;
+    }
+  .container h2{
+padding-bottom: 0px;
+}
+.wrapper {
+    padding: 20px 0px 20px 0px;
+    }
+}

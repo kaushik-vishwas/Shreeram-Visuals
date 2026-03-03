@@ -1,0 +1,243 @@
+.container {
+    width: 80%;
+    margin: 80px auto;
+    padding: 5px;
+    box-shadow: 0px 0px 72.74247741699219px 36.371238708496094px #00000014;
+    display: flex;
+}
+
+.right {
+    background-color: #312584;
+    width: 42%;
+    border-radius: 6px;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.heading {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.right h4 {
+    color: #9c9c9c;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+p {
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.right span {
+    display: flex;
+    gap: 15px;
+    margin: 20px 20px 20px 0px;
+}
+
+.left {
+    width: 58%;
+    padding: 40px;
+    background-color: white;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px 30px;
+}
+
+.inputBox {
+    width: 100%;
+}
+
+.inputBox input,
+.inputBox textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #8D8D8D;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+
+.inputBox input::placeholder {
+    color: #8D8D8D;
+}
+
+label {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8D8D8D;
+    padding-bottom: 10px;
+}
+
+.textarea {
+    margin-top: 45px;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    justify-content: flex-end;
+}
+
+.button button {
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #312584;
+    border: none;
+    padding: 20px 40px;
+    width: unset;
+    border-radius: 3px;
+    margin: 0px;
+    color: #fff;
+}
+
+.button button:hover {
+    background-color: rgba(49, 37, 132, 0.7);
+}
+
+.button button:disabled {
+    opacity: 0.7;
+}
+
+.right span svg {
+    width: 30px !important;
+}
+
+@media (max-width: 1248px) {
+    .heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .right h4 {
+        font-size: 20px;
+    }
+
+    .right p {
+        font-size: 18px;
+    }
+
+    .right,
+    .left {
+        padding: 35px;
+    }
+
+    .right span {
+        margin: 20px 5px 20px 0px;
+    }
+}
+
+@media (max-width: 1081px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 781px) {
+    .button button {
+        font-size: 16px;
+        padding: 16px 30px;
+    }
+
+    .heading {
+        font-size: 26px;
+    }
+
+    .right h4 {
+        font-size: 18px;
+    }
+
+    .right,
+    .left {
+        padding: 30px;
+    }
+
+    .right p {
+        font-size: 16px;
+    }
+
+    .right span svg {
+        width: 26px !important;
+    }
+}
+
+@media (max-width: 618px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .right,
+    .left {
+        width: 100%;
+    }
+
+    .button button {
+        padding: 8px 18px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .right h4 {
+        font-size: 16px;
+    }
+
+    .right p {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .right {
+        gap: 0px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .form {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .inputBox input,
+    .inputBox textarea,
+    label {
+        font-size: 14px;
+    }
+
+    label {
+        padding-bottom: 2px;
+    }
+}

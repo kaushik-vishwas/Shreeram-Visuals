@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 575px) {
+  .styles {
+    display: none;
+  }
+
+  .slick-dots li {
+    width: 10px;
+  }
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.slick-dots li button {
+  padding: 3px;
+}
+
+.slider {}
+
+.slider div {
+  outline: none;
+  border: none;
+}
+
+.slick-dots.slick-thumb {
+  display: flex !important;
+  flex-direction: row !important;
+  bottom: 15px;
+  justify-content: center;
+}
+
+.slick-dots.slick-thumb li {
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  border-radius: 999px;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+  background-color: rgba(255, 255, 255, 0.60);
+}
+
+.slick-dots.slick-thumb li.slick-active {
+  background-color: #fff;
+  width: 24px;
+}
+
+.slick-dots li button:before {
+  width: 0px;
+}
+
+
+
+
+
+
+
+.slick-dots li {
+  margin: 0 12px;
+  width: 42px;
+}
+
+
+.service_main .slick-dots {
+  display: block !important;
+}
+
+.service_main .slick-dots li button {
+  width: 3px;
+  height: 3px;
+}
+
+.service_main .slick-dots li.slick-active button {
+  width: 3px;
+  height: 3px;
+}
+
+.service_main .slider {}
+
+.service_main .slider div {
+  outline: none;
+  border: none;
+}
+
+.service_main .slick-dots .slick-thumb {
+  display: flex;
+  flex-direction: row;
+  bottom: 15px;
+  justify-content: center;
+}
+
+.service_main .slick-dots .slick-thumb li {
+
+  width: 26px;
+  margin: 0 23px;
+  border-radius: 999px;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+  background-color: rgba(255, 255, 255, 0.60);
+}
+
+.service_main .slick-dots.slick-thumb li.slick-active {
+  background-color: #fff;
+  width: 24px;
+}
+
+.service_main .slick-dots.slick-thumb ul {
+  display: flex !important;
+}
+
+.service_main .slick-slide>div {
+  margin: 0 15px;
+}
+
+.service_main .slick-list {
+  margin: 0px
+}
+
+.slick-dots {
+  margin: -30px 0px;
+}
+
+.service_main .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+.service_main .slick-dots li.slick-active button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  text-align: center;
+  background-color: #2F2583;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* Change the size of dots */
+.service_main .slick-dots li button {
+  background-color: #D9D9D9;
+  /* Change to your desired color */
+  width: 26px;
+  height: 2px;
+  padding-left: 10px;
+  border-radius: 50px;
+  color: transparent;
+}
+
+/* Customize active dot */
+.service_main .slick-dots li.slick-active button {
+  background-color: #2F2583;
+  /* Change to your desired color */
+  color: transparent;
+  width: 52px;
+  height: 2px;
+  border-radius: 50px;
+}
+
+
+/* styles.css */
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #333;
+  z-index: 999;
+}
+
+.service_main2 .slick-dots {
+  display: block !important;
+}
+
+.service_main2 .magic-dots button::before {
+  width: 24px !important;
+  height: 7px !important;
+  content: '' !important;
+  border-radius: 4px;
+  background-color: #D9D9D9;
+  opacity: 0.8;
+}
+
+.service_main2 .magic-dots .slick-active button::before { 
+  width: 30px !important;
+  background: #2F2583;
+}
+
+
+.service_main .magic-dots button::before {
+  width: 24px !important;
+  height: 7px !important;
+  content: '' !important;
+  border-radius: 4px;
+  background-color: #D9D9D9;
+  opacity: 0.8;
+}
+
+.service_main .magic-dots .slick-active button::before { 
+  width: 30px !important;
+  background: #2F2583;
+}
+
+.Toastify__toast--success {
+  /* background-image: url("../public/assets/icons/success.svg"); */
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: left;
+}
+
+.Toastify__toast--warning {
+  /* background-image: url("../public/assets/icons/warning.svg");ij */
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: left;
+}
+
+.Toastify__toast--error {
+  /* background-image: url("../public/assets/icons/error.svg"); */
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: left;
+}
+
+.Toastify__close-button {
+  width: 25px;
+}

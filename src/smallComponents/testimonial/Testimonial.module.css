@@ -1,0 +1,171 @@
+.container{
+  width: 100%;
+  padding: 60px;
+  background-color: #EEEEEE;
+  position: relative;
+}
+.container h4{
+  font-family: Quicksand;
+font-size: 25px;
+font-weight: 400;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: center;
+}
+.container h2{
+  font-family: Quicksand;
+font-size: 66px;
+font-weight: 600;
+line-height: 81px;
+letter-spacing: 0em;
+text-align: center;
+color: #312584;
+padding-bottom: 25px;
+}
+.maincontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  gap: 12%;
+}
+.content{
+  width: 55%;
+  text-align: center;
+}
+.imageContainer{
+  width: 33%;
+}
+.imageContainer img{
+  width: 100%;
+  height: auto;
+}
+.content p{
+  font-family: Montserrat;
+font-size: 20px;
+font-style: italic;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+color: #2b2b2b;
+}
+/* .imageContainer img{
+  width: 50%;
+} */
+.content svg{
+  width: 35px;
+}
+.role{
+  font-family: Jost;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.author{
+  font-family: Inter;
+font-size: 25px;
+font-weight: 500;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+color: #0B0BA0;
+}
+.centered{
+  position: absolute;
+  top: 43%;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1060px) {
+  .content p{
+    font-size: 18px;
+    line-height: normal;
+  }
+  .container h2{
+    font-size: 36px;
+  }
+  .maincontainer{
+    width: 100%;
+    gap: 5%;
+  }
+  .imageContainer{
+    width: 40%;
+  }
+  .container{
+    padding: 50px 32px;
+  }
+  .centered{
+    left: 10%;
+    width: 80%;
+    /* top: 49%; */
+  }
+  .centered svg{
+    width: 50px;
+  }
+}
+@media (max-width: 768px){
+  .imageContainer{
+    width: 0%;
+    display: none;
+  }
+  .content{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .centered{
+    top: 49%;
+    width: 94%;
+    left: 3%;
+  }
+  .centered svg{
+    width: 26px;
+  }
+  .container{
+    padding: 35px 28px;
+  }
+}
+@media (max-width: 498px){
+  .content{
+    text-align: center;
+  }
+  .content p, .author{
+    font-size: 14px;
+    line-height: normal;
+    text-align: center;
+  }
+  .container h2{
+    font-size: 26px;
+    line-height: normal;
+  }
+  .role{
+    font-size: 10px;
+    line-height: normal;
+  }
+  .container h4{
+    display: none;
+  }
+  .container{
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1279px) and (max-width: 1440px) {
+
+  .content p{
+    font-size:16px;
+    line-height: 28px;
+    padding-bottom: 12px;
+    }
+    .container h2{
+        font-size: 50px;
+        line-height: 62px;
+    }
+}

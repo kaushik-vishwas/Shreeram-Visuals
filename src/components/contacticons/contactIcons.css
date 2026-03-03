@@ -1,0 +1,34 @@
+.contact-form {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.contact-icon-left,
+.contact-icon-right {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icons a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-icons a img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 481px) {
+  .contact-form {
+    display: none;
+  }
+}

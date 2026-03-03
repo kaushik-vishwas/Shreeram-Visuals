@@ -1,0 +1,35 @@
+.container{
+    width: 100%;
+    background-color: #312584;
+    justify-content: center;
+    display: flex;
+    height: 75px;
+}
+.box{
+    width: 85%;
+
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+.Number{
+  
+    display: flex;
+    align-items: center;   
+}
+.call{
+    font-size: 22px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+}
+
+@media  (max-width: 768px){
+    .call{
+        font-size: 12px;
+        font-weight: 800;
+        font-family: "Poppins", sans-serif;
+        color: #FFFFFF;
+    }
+ 
+}

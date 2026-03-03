@@ -1,0 +1,195 @@
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 60px 0;
+}
+.container h4{
+    color: black;
+    font-family: Quicksand;
+font-size: 30px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: center;
+}
+.container h2{
+    font-family: Quicksand;
+font-size: 66px;
+font-weight: 600;
+line-height: 79px;
+letter-spacing: 0em;
+text-align: center;
+color: #312584;
+}
+.title{
+    font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 36px;
+text-align: center;
+padding: 0px 60px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 60px;
+}
+.card{
+    width: 100%;
+    /* background-image: url('../../../public/assets/images/Maskgroup4324.png'); */
+    height: 370px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    background-size: cover;
+}
+.card img{
+    width: 100%;
+}
+.bg{
+    width: 100%;
+    color: white;
+    height: 100%;
+    display: flex;
+    /* background: linear-gradient(180deg, #312584 0%, rgba(49, 37, 132, 0) 38.91%); */
+    background: linear-gradient(to top, #312584 0%, rgba(49, 37, 132, 0));
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0.75;
+    min-height: 255px;
+    cursor: pointer;
+    padding: 12px;
+    padding-bottom: 15px;
+}
+.head{
+    font-family: Poppins;
+font-size: 28px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: left;
+}
+.context{
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+padding: 10px 0px;
+margin-bottom: -103px;
+transition: 0.2s;
+height: 140px;
+}
+button{
+    background-color: #F09303;
+    font-family: Poppins;
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+border: none;
+width: 150px;
+padding: 10px 10px;
+color: white;
+text-align: center;
+margin-bottom: -80px;
+transition: 0.3s;
+}
+.bg:hover{
+    opacity: 1;
+}
+.bg:hover .context, .bg:hover button{
+    margin-bottom: 0px;
+    visibility: visible;
+}
+.topGap{
+    margin-top: 75px;
+}
+@media (max-width: 1298px) {
+button{
+    margin-bottom: -85px;
+}
+.context{
+    margin-bottom: -72px;
+}
+}
+@media (max-width: 1168px) {
+    button{
+        margin-bottom: -95px;
+    }
+    .context{
+        margin-bottom: -82px;
+    }
+}
+@media (max-width: 1078px) {
+    button{
+        margin-bottom: -100px;
+    }
+    .context{
+        margin-bottom: -87px;
+    }
+}
+@media (max-width: 1031px) {
+    button{
+        margin-bottom: -110px;
+    }
+    .context{
+        margin-bottom: -97px;
+    }
+    .container{
+        width: 95%;
+    }
+    .card{
+        height: 320px;
+    }
+    .head{
+        padding-bottom: 14px;
+    }
+}
+@media (max-width: 825px) {
+    button{
+        margin-bottom: 0px;
+        line-height: normal;
+        font-size: 12px;
+        width: 100px;
+    }
+    .bg{
+        padding: 15px;
+    }
+    .context{
+        margin-bottom: 0px;
+        line-height: normal;
+        font-size: 14.5px;
+        padding: 10px 25px 10px 0px;
+    }
+    .topGap{
+        margin-top: 0px;
+    }
+    .head{
+        font-size: 20px;
+        line-height: normal;
+    }
+    .container h2{
+        font-size: 26px;
+        line-height: normal;
+    }
+    .container{
+        width: 75%;
+    }
+    .title{
+        font-size: 14px;
+        padding: 1px 10px;
+        line-height: normal;
+    }
+    .container h4{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .cards{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+}

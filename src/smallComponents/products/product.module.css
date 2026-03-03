@@ -1,0 +1,372 @@
+.container {
+    width: 94%;
+    margin: auto;
+    color: black;
+    padding: 70px 0px 120px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container h2 {
+    font-family: Quicksand;
+    font-size: 66px;
+    font-weight: 600;
+    line-height: 79px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #312584;
+    padding: 15px 0;
+}
+
+.container h4 {
+    font-family: Quicksand;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+}
+
+.title {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 45px 25px;
+    margin-top: 25px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product {
+    width: 100%;
+    padding-bottom: 25px;
+    height: fit-content;
+}
+
+.imageArea {
+    width: 100%;
+    background-color: #D9D9D9;
+    height: 300px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.centeredImg {
+    width: 85%;
+    margin: auto;
+}
+
+.name {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #312584;
+    margin-top: 18px;
+}
+
+.category {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+.text {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    padding: 10px 0;
+    padding-bottom: 30px
+}
+
+.product .more {
+    background-color: #F09303;
+    color: white;
+    font-family: Poppins;
+    font-size: 20px;
+    width: unset;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.product .more2 {
+    background-color: #F09303;
+    color: white;
+    font-family: Poppins;
+    font-size: 20px;
+    width: unset;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    display: none;
+}
+
+.product svg {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* .product svg:hover{
+    background-color: #F09303;
+    stroke:white;
+} */
+.innovative {
+    font-family: Quicksand;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 73px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #312584;
+    padding-bottom: 20px;
+}
+
+.width {
+    width: 93% !important;
+    margin-bottom: 35px !important;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+    .text,
+    .product button {
+        line-height: normal;
+        font-size: 16px;
+    }
+
+    .name {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .centeredImg {
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+    }
+
+    .imageArea {
+        height: 265px;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .container h2,
+    .innovative {
+        font-size: 36px;
+        line-height: normal;
+    }
+
+    .title,
+    .container h4 {
+        font-size: 20px;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product .more {
+        width: 0px;
+        padding: 0px 0px;
+    }
+
+    .product .more2 {
+        width: 0px;
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        gap: 20px;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product button {
+        padding: 6px 12px;
+    }
+
+    .container {
+        padding: 70px 0px 120px 0px;
+    }
+
+    .container h2 {
+        font-size: 26px;
+        line-height: 38px;
+        padding: 0px;
+        text-align: left;
+    }
+
+    .container h4 {
+        font-size: 12px;
+        line-height: 24px;
+        text-align: left;
+        margin: 0px;
+    }
+
+    .title {
+        text-align: left;
+        font-size: 14px;
+        line-height: 24px;
+        width: 100%;
+    }
+
+    .imageArea {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 88%;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .product {
+        display: flex;
+        width: 96%;
+        margin-top: 0px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .product button,
+    .text {
+        display: none;
+    }
+
+    .name {
+        font-size: 18px;
+        margin: 0px 0px 0px 0px;
+        margin-top: 0px;
+    }
+
+    .category {
+        margin-left: -20px;
+    }
+
+    .product svg {
+        display: block;
+        width: 16px;
+        height: 20px;
+    }
+
+    .centeredImg {
+        width: 65%;
+    }
+
+    .container {
+        padding: 60px 0px 60px 0px;
+    }
+
+    .container h2 {
+        font-size: 26px;
+        line-height: 38px;
+        padding: 0px;
+        text-align: left;
+    }
+
+    .container h4 {
+        font-size: 12px;
+        line-height: 24px;
+        text-align: left;
+        margin: 0px;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .product .more {
+        padding: 0px 0px;
+        background-color: white;
+        display: none;
+    }
+
+    .product .more2 {
+        padding: 0px 0px;
+        background-color: white;
+        display: block;
+    }
+
+    .imageArea {
+        width: 40%;
+        height: 100px;
+        display: block;
+    }
+
+    .namecol {
+        width: 46%;
+
+    }
+
+    .hrefcol {
+        width: 0%;
+    }
+
+    .hrefcol p {
+        display: none;
+    }
+}
+
+@media (max-width: 599px) {
+    .container {
+        padding: 20px 0 40px 0;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .name,
+    .category {
+        margin: auto;
+    }
+}
